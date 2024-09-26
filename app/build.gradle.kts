@@ -1,6 +1,10 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-parcelize")
+    id("androidx.navigation.safeargs.kotlin")
+    id("dagger.hilt.android.plugin")
+    kotlin("kapt") // Ensure this is included here
 }
 
 android {
@@ -29,6 +33,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -50,7 +55,6 @@ android {
 }
 
 dependencies {
-
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.6")
     implementation("androidx.activity:activity-compose:1.9.2")
@@ -66,4 +70,26 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // Loading button
+    implementation("com.github.leandroborgesferreira:loading-button-android:2.3.0")
+
+    // Glide
+    implementation("com.github.bumptech.glide:glide:4.13.0")
+
+    // Circular image
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+
+    // ViewPager2 indicator
+    implementation("io.github.vejei:viewpagerindicator:1.0.0-alpha.1")
+
+    // StepView
+    implementation("com.github.shuhart:stepview:1.5.1")
+
+    // Android Ktx
+    implementation("androidx.navigation:navigation-fragment-ktx:2.4.2")
+
+    // Dagger Hilt
+    implementation("com.google.dagger:hilt-android:2.46.1") // Updated version
+    kapt("com.google.dagger:hilt-compiler:2.46.1") // Updated version
 }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "192421380323",
+    "project_id": "enactmart",
+    "storage_bucket": "enactmart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192421380323:android:9f8279332428b8172945d6",
+        "android_client_info": {
+          "package_name": "com.example.enactmart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRmIVhf80U--sXty5zEgXHglKOYZFLwp4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

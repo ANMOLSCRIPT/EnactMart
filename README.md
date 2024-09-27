@@ -58,4 +58,4 @@ We welcome contributions from the open-source community to help improve the Agro
 7. Create a new pull request, describing your changes and their purpose.
 
 ## Contact
-For any inquiries, please contact us at [anmol.garg.ug23@nsut.ac.in](mailto:email@example.com).
+For any inquiries, please contact me at [anmol.garg.ug23@nsut.ac.in](mailto:email@example.com).

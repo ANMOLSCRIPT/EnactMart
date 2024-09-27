@@ -35,7 +35,7 @@ data.
   
 
 # Contributing
-We welcome contributions from the open-source community to help improve the AgroSaarathi Project. To contribute, please follow these guidelines:
+To contribute, please follow these guidelines:
 
 1. Fork the repository.
 

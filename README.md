@@ -24,6 +24,14 @@ order.
 data.
 
 # App ScreenShots:
+<img width="221" alt="image" src="https://github.com/user-attachments/assets/7c63a3b1-6e87-4b46-9fdb-94ce9ac2f50a">
+<img width="223" alt="image" src="https://github.com/user-attachments/assets/2b4daace-5f06-4959-8c2f-7a1c70e79d0b">
+<img width="223" alt="image" src="https://github.com/user-attachments/assets/d144d633-cfab-4a30-a6d8-d5358433478d">
+<img width="223" alt="image" src="https://github.com/user-attachments/assets/1ba0d4d8-4749-4a62-90c6-34194458af0a">
+
+
+
+
 
 # Tools & Technologies:
 **Frontend:** Kotlin, Android Studio

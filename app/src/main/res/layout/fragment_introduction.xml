@@ -14,12 +14,12 @@
         android:id="@+id/ellipse"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="@id/guidelineEllipseLeft"
-        app:layout_constraintEnd_toEndOf="@id/guidelineEllipseRight"
-        app:layout_constraintTop_toTopOf="@id/guidelineEllipseTop"
+        android:background="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="@id/guidelineEllipseBottom"
-        android:background="@drawable/unnamed"
-        app:layout_constraintDimensionRatio="1:1"/>
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEllipseRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineEllipseLeft"
+        app:layout_constraintTop_toTopOf="@id/guidelineEllipseTop" />
 
     <TextView
         android:id="@+id/tvRightAddressForShopping"

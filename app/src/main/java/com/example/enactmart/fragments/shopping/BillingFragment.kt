@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.compose.ui.tooling.data.EmptyGroup.data
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
@@ -95,7 +94,7 @@ class BillingFragment : Fragment() {
                     }
 
                     is Resource.Success -> {
-                        addressAdapter.differ.submitList(it.data)
+                        addressAdapter.differ
                         binding.progressbarAddress.visibility = View.GONE
                     }
 

@@ -4,6 +4,7 @@ import android.location.Address
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.enactmart.util.Resource
+import com.example.enactmart.util.Resource.Success
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -34,7 +35,7 @@ class AddressViewModel @Inject constructor(
             viewModelScope.launch { _addNewAddress.emit(Resource.Loading()) }
             firestore.collection("user").document(auth.uid!!).collection("address").document()
                 .set(address).addOnSuccessListener {
-                    viewModelScope.launch { _addNewAddress.emit(Resource.Success(address)) }
+                    viewModelScope.launch {  }
                 }.addOnFailureListener {
                     viewModelScope.launch { _addNewAddress.emit(Resource.Error(it.message.toString())) }
                 }

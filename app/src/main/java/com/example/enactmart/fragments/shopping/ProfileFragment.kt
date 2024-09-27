@@ -58,14 +58,6 @@ class ProfileFragment : Fragment() {
             findNavController().navigate(action)
         }
 
-        binding.linearLogOut.setOnClickListener {
-            viewModel.logout()
-            val intent = Intent(requireActivity(), LoginRegisterActivity::class.java)
-            startActivity(intent)
-            requireActivity().finish()
-        }
-
-        binding.tvVersion.text = "Version ${BuildConfig.VERSION_CODE}"
 
         lifecycleScope.launchWhenStarted {
             viewModel.user.collectLatest {

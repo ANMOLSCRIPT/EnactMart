@@ -129,7 +129,7 @@
                         android:layout_height="30dp"
                         android:src="@drawable/ic_all_orders"
                         android:layout_gravity="center_vertical"
-                        android:background="@drawable/settings_items_background"
+                        android:background="@color/cream"
                         app:tint="@color/white" />
 
                     <TextView
@@ -163,9 +163,9 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/ic_search"
+                        android:src="@drawable/round_search_24"
                         android:layout_gravity="center_vertical"
-                        android:background="@drawable/settings_items_background"
+                        android:background="@color/cream"
                         android:backgroundTint="@color/g_gray700"
                         app:tint="@color/white" />
 
@@ -201,7 +201,7 @@
                         android:layout_height="30dp"
                         android:src="@drawable/ic_billing"
                         android:layout_gravity="center_vertical"
-                        android:background="@drawable/settings_items_background"
+                        android:background="@color/cream"
                         android:backgroundTint="#FF9800"
                         app:tint="@color/white" />
 
@@ -261,7 +261,7 @@
                         android:layout_height="30dp"
                         android:src="@drawable/ic_notification"
                         android:layout_gravity="center_vertical"
-                        android:background="@drawable/settings_items_background"
+                        android:background="@color/cream"
                         app:tint="@color/white"
                         android:backgroundTint="#4cd964"/>
 
@@ -326,7 +326,7 @@
                         android:layout_height="30dp"
                         android:src="@drawable/ic_logout"
                         android:layout_gravity="center_vertical"
-                        android:background="@drawable/settings_items_background"
+                        android:background="@color/cream"
                         android:backgroundTint="#ff5823"
                         app:tint="@color/white"
                         />

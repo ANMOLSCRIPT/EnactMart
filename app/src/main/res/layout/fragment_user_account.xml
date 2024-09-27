@@ -79,7 +79,7 @@
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_marginTop="50dp"
-            android:background="@drawable/settings_items_background"
+            android:background="@color/cream"
             android:backgroundTint="#5E85F9"
             android:src="@drawable/ic_edit"
             app:layout_constraintBottom_toBottomOf="@id/imageUser"

@@ -4,7 +4,8 @@ plugins {
     id("kotlin-parcelize")
     id("androidx.navigation.safeargs.kotlin")
     id("dagger.hilt.android.plugin")
-    kotlin("kapt") // Ensure this is included here
+    kotlin("kapt")
+    id("com.google.gms.google-services") // Ensure this is included here
 }
 
 android {
@@ -43,6 +44,7 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
@@ -66,6 +68,11 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+
+    //Firebase
+    implementation("com.google.firebase:firebase-auth:23.0.0")
+    implementation("com.google.firebase:firebase-firestore:25.1.0")
+
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
@@ -95,4 +102,9 @@ dependencies {
     // Dagger Hilt
     implementation("com.google.dagger:hilt-android:2.46.1") // Updated version
     kapt("com.google.dagger:hilt-compiler:2.46.1") // Updated version
+
+    //Navigation Component
+    val nav_version = "2.5.2"
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 }

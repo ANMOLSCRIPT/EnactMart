@@ -25,7 +25,7 @@
                     android:id="@+id/imageCloseBilling"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/ic_close"
+                    android:src="@drawable/round_close_24"
                     android:scaleType="centerInside"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -105,7 +105,7 @@
             app:layout_constraintTop_toTopOf="@id/tvShoppingAddress"
             app:layout_constraintBottom_toBottomOf="@id/tvShoppingAddress"
             android:src="@drawable/ic_add"
-            app:tint="@color/g_dark_blue"
+            app:tint="@color/purple_700"
             />
 
         <FrameLayout
@@ -130,7 +130,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:indeterminateTint="@color/g_blue"
+                android:indeterminateTint="@color/purple_700"
                 android:visibility="gone"/>
 
         </FrameLayout>
@@ -177,7 +177,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:background="@drawable/total_box_background"
+            android:background="@color/cream"
             app:layout_constraintTop_toBottomOf="@id/rvProducts"
             app:layout_constraintStart_toStartOf="@id/leftGuideline"
             app:layout_constraintEnd_toEndOf="@id/rightGuideline">
@@ -216,11 +216,11 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+        <com.github.leandroborgesferreira.loadingbutton.customViews.CircularProgressButton
             android:id="@+id/buttonPlaceOrder"
             android:layout_width="0dp"
             android:layout_height="@dimen/mediumButtonHeight"
-            style="@style/blueButtonStyle"
+            style="@style/yellowButtonStyle"
             app:layout_constraintTop_toBottomOf="@id/totalBoxContainer"
             app:layout_constraintStart_toStartOf="@id/totalBoxContainer"
             app:layout_constraintEnd_toEndOf="@id/totalBoxContainer"

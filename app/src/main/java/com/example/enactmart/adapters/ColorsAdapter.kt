@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.example.enactmart.databinding.ColorRvItemBinding
 
 class ColorsAdapter : RecyclerView.Adapter<ColorsAdapter.ColorsViewHolder>() {
 

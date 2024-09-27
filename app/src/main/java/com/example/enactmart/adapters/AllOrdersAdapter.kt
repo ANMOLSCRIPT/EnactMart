@@ -11,6 +11,7 @@ import com.example.enactmart.R
 import com.example.enactmart.data.order.Order
 import com.example.enactmart.data.order.OrderStatus
 import com.example.enactmart.data.order.getOrderStatus
+import com.example.enactmart.databinding.OrderItemBinding
 
 class AllOrdersAdapter : Adapter<AllOrdersAdapter.OrdersViewHolder>() {
 

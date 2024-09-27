@@ -27,16 +27,16 @@
             android:id="@+id/tvSpecialProductName"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="Scotch Premium"
-            app:layout_constraintStart_toEndOf="@id/imageSpecialRvItem"
-            app:layout_constraintTop_toTopOf="@id/imageSpecialRvItem"
-            android:layout_marginTop="7dp"
             android:layout_marginStart="18dp"
+            android:layout_marginTop="7dp"
             android:fontFamily="@font/poppins_thin"
-            android:textStyle="bold"
+            android:maxLines="2"
+            android:text="Product"
             android:textColor="@color/black"
             android:textSize="17sp"
-            android:maxLines="2"/>
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/imageSpecialRvItem"
+            app:layout_constraintTop_toTopOf="@id/imageSpecialRvItem" />
 
         <TextView
             android:id="@+id/tvSpecialPrdouctPrice"

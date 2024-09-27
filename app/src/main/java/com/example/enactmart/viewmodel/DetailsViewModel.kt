@@ -33,11 +33,13 @@ class DetailsViewModel @Inject constructor(
                         addNewProduct(cartProduct)
                     } else {
                         val product = it.first().toObject(CartProduct::class.java)
-                        if(product.product == cardProduct.product && product.selectedColor == cardProduct.selectedColor && product.selectedSize== cardProduct.selectedSize){ //Increase the quantity (fixed quantity increasement issue)
-                            val documentId = it.first().id
-                            increaseQuantity(documentId, cartProduct)
-                        } else { //Add new product
-                            addNewProduct(cartProduct)
+                        if (product != null) {
+                            if(product.product == cartProduct.product && product.selectedColor == cartProduct.selectedColor && product.selectedSize== cartProduct.selectedSize){ //Increase the quantity (fixed quantity increment issue)
+                                val documentId = it.first().id
+                                increaseQuantity(documentId, cartProduct)
+                            } else { //Add new product
+                                addNewProduct(cartProduct)
+                            }
                         }
                     }
                 }

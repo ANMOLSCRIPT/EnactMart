@@ -35,12 +35,12 @@
                 android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:fontFamily="@font/poppins_light"
-                android:text="Chair"
+                android:text="Agni Product"
                 android:textColor="@color/black"
                 android:textSize="14sp"
-                android:textStyle="bold"
-                android:layout_weight="1"/>
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/img_favorite"

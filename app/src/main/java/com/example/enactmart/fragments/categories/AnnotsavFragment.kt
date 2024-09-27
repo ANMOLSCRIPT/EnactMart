@@ -5,7 +5,10 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import com.example.enactmart.data.Category
 import com.example.enactmart.util.Resource
+import com.example.enactmart.viewmodel.CategoryViewModel
+import com.example.enactmart.viewmodel.factory.BaseCategoryViewModelFactoryFactory
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.firestore.FirebaseFirestore
 import dagger.hilt.android.AndroidEntryPoint
@@ -19,7 +22,7 @@ class AnnotsavFragment: BaseCategoryFragment() {
     lateinit var firestore: FirebaseFirestore
 
     val viewModel by viewModels<CategoryViewModel> {
-        BaseCategoryViewModelFactoryFactory(firestore, Category.Cupboard)
+        BaseCategoryViewModelFactoryFactory(firestore, Category.Annotsav)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

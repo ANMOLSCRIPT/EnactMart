@@ -72,6 +72,7 @@ dependencies {
     //Firebase
     implementation("com.google.firebase:firebase-auth:23.0.0")
     implementation("com.google.firebase:firebase-firestore:25.1.0")
+    implementation("com.google.firebase:firebase-storage:21.0.0")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
@@ -107,4 +108,7 @@ dependencies {
     val nav_version = "2.5.2"
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+
+    //Coroutines with Firebase
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.5.1")
 }

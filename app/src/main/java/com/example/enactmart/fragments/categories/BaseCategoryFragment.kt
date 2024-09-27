@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.enactmart.R
 import com.example.enactmart.adapters.BestProductsAdapter
 import com.example.enactmart.databinding.FragmentBaseCategoryBinding
+import com.example.enactmart.util.showBottomNavigationView
 
 open class BaseCategoryFragment: Fragment(R.layout.fragment_base_category) {
     private lateinit var binding: FragmentBaseCategoryBinding

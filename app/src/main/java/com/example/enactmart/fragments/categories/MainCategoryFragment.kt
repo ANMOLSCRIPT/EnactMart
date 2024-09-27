@@ -15,8 +15,12 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.enactmart.R
+import com.example.enactmart.adapters.BestDealsAdapter
+import com.example.enactmart.adapters.BestProductsAdapter
+import com.example.enactmart.adapters.SpecialProductsAdapter
 import com.example.enactmart.databinding.FragmentMainCategoryBinding
 import com.example.enactmart.util.Resource
+import com.example.enactmart.util.showBottomNavigationView
 import com.example.enactmart.viewmodel.MainCategoryViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest

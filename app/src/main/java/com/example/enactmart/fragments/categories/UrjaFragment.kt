@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import com.example.enactmart.data.Category
 import com.example.enactmart.util.Resource
+import com.example.enactmart.viewmodel.CategoryViewModel
 import com.example.enactmart.viewmodel.factory.BaseCategoryViewModelFactoryFactory
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.firestore.FirebaseFirestore
@@ -19,7 +21,7 @@ class UrjaFragment: BaseCategoryFragment() {
     lateinit var firestore: FirebaseFirestore
 
     val viewModel by viewModels<CategoryViewModel> {
-        BaseCategoryViewModelFactoryFactory(firestore, Category.Furniture)
+        BaseCategoryViewModelFactoryFactory(firestore, Category.Urja)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

@@ -18,7 +18,6 @@ import com.example.enactmart.databinding.FragmentProfileBinding
 import com.example.enactmart.util.Resource
 import com.example.enactmart.util.showBottomNavigationView
 import com.example.enactmart.viewmodel.ProfileViewModel
-import com.github.leandroborgesferreira.loadingbutton.BuildConfig
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 

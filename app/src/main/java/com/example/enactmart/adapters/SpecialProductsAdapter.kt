@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.enactmart.data.Product
+import com.example.enactmart.databinding.SpecialRvItemBinding
 
 class SpecialProductsAdapter :
     RecyclerView.Adapter<SpecialProductsAdapter.SpecialProductsViewHolder>() {

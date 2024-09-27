@@ -27,7 +27,7 @@ class AddressViewModel @Inject constructor(
     private val _error = MutableSharedFlow<String>()
     val error = _error.asSharedFlow()
 
-    fun addAddress(address: Address) {
+    fun addAddress(address: com.example.enactmart.data.Address) {
         val validateInputs = validateInputs(address)
 
         if (validateInputs) {
@@ -47,7 +47,7 @@ class AddressViewModel @Inject constructor(
 
 
 
-    private fun validateInputs(address: Address): Boolean {
+    private fun validateInputs(address: com.example.enactmart.data.Address): Boolean {
         return address.addressTitle.trim().isNotEmpty() &&
                 address.city.trim().isNotEmpty() &&
                 address.phone.trim().isNotEmpty() &&

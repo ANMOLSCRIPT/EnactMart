@@ -13,8 +13,11 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.enactmart.R
+import com.example.enactmart.adapters.CartProductAdapter
 import com.example.enactmart.databinding.FragmentCartBinding
+import com.example.enactmart.firebase.FirebaseCommon
 import com.example.enactmart.util.Resource
+import com.example.enactmart.util.VerticalItemDecoration
 import com.example.enactmart.viewmodel.CartViewModel
 import kotlinx.coroutines.flow.collectLatest
 

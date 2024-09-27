@@ -143,9 +143,11 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-        <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+        <com.github.leandroborgesferreira.loadingbutton.customViews.CircularProgressButton
+            android:layout_width=""
+            android:layout_height=""
             android:id="@+id/buttonCheckout"
-            style="@style/blueButtonStyle"
+            style="@style/yellowButtonStyle"
             android:layout_width="0dp"
             android:layout_height="@dimen/mediumButtonHeight"
             android:layout_marginTop="45dp"

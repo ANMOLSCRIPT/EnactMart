@@ -8,18 +8,21 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.example.enactmart.R
+import com.example.enactmart.data.Address
+import com.example.enactmart.databinding.AddressRvItemBinding
 
 class AddressAdapter : Adapter<AddressAdapter.AddressViewHolder>() {
 
     inner class AddressViewHolder(val binding: AddressRvItemBinding) :
         ViewHolder(binding.root) {
-        fun bind(address: Address,isSelected: Boolean) {
+        fun bind(address: Address, isSelected: Boolean) {
             binding.apply {
                 buttonAddress.text = address.addressTitle
                 if (isSelected){
-                    buttonAddress.background = ColorDrawable(itemView.context.resources.getColor(R.color.g_blue))
+                    buttonAddress.background = ColorDrawable(itemView.context.resources.getColor(R.color.yellow))
                 }else{
-                    buttonAddress.background = ColorDrawable(itemView.context.resources.getColor(R.color.g_white))
+                    buttonAddress.background = ColorDrawable(itemView.context.resources.getColor(R.color.gray_black))
                 }
             }
         }

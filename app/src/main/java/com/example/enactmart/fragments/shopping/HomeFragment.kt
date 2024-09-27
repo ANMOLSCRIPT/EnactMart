@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.enactmart.R
+import com.example.enactmart.adapters.HomeViewpagerAdapter
 import com.example.enactmart.databinding.FragmentHomeBinding
 import com.example.enactmart.fragments.categories.AccessoryFragment
 import com.example.enactmart.fragments.categories.AgniFragment
@@ -31,7 +32,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val categoriesFragments = arrayListOf(
+        val categoriesFragments = arrayListOf<Fragment>(
             MainCategoryFragment(),
             AgniFragment(),
             AnnotsavFragment(),

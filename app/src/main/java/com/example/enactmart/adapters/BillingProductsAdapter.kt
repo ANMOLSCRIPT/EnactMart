@@ -9,6 +9,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.Glide
+import com.example.enactmart.data.CartProduct
+import com.example.enactmart.helper.getProductPrice
 
 class BillingProductsAdapter: Adapter<BillingProductsAdapter.BillingProductsViewHolder>() {
 

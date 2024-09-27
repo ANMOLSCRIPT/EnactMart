@@ -2,6 +2,7 @@ package com.example.enactmart.di
 
 import android.app.Application
 import android.content.Context.MODE_PRIVATE
+import com.example.enactmart.firebase.FirebaseCommon
 import com.example.enactmart.util.Constants.INTRODUCTION_SP
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore

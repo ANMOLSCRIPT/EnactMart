@@ -2,6 +2,8 @@ package com.example.enactmart.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.enactmart.data.Category
+import com.example.enactmart.data.Product
 import com.example.enactmart.util.Resource
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.coroutines.flow.MutableStateFlow

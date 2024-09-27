@@ -2,6 +2,7 @@ package com.example.enactmart.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.enactmart.data.order.Order
 import com.example.enactmart.util.Resource
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore

@@ -32,25 +32,7 @@ data.
 **Database:** Firebase Firestore
 
 ## Installation Steps:
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/agrosaarathi.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd agrosaarathi
-    ```
-3. Install dependencies:
-    ```bash
-    npm install
-    flutter pub get
-    pip install -r requirements.txt
-    ```
-4. Set up environment variables (API keys, etc.).
-5. Run the app:
-    ```bash
-    flutter run
-    ```
+  
 
 # Contributing
 We welcome contributions from the open-source community to help improve the AgroSaarathi Project. To contribute, please follow these guidelines:

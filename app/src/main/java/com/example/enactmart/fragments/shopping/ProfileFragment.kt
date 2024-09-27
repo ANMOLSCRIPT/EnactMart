@@ -1,5 +1,6 @@
 package com.example.enactmart.fragments.shopping
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -18,6 +19,7 @@ import com.example.enactmart.databinding.FragmentProfileBinding
 import com.example.enactmart.util.Resource
 import com.example.enactmart.util.showBottomNavigationView
 import com.example.enactmart.viewmodel.ProfileViewModel
+import com.shuhart.stepview.BuildConfig
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 
@@ -35,6 +37,7 @@ class ProfileFragment : Fragment() {
         return binding.root
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -43,7 +46,7 @@ class ProfileFragment : Fragment() {
         }
 
         binding.linearAllOrders.setOnClickListener {
-            findNavController().navigate(R.id.action_profileFragment_to_ordersFragment)
+            findNavController().navigate(R.id.action_profileFragment_to_allOrdersFragment)
         }
 
         binding.linearBilling.setOnClickListener {

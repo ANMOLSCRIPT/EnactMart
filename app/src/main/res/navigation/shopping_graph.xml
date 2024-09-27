@@ -41,8 +41,14 @@
         android:label="ProfileFragment"
         tools:layout="@layout/fragment_profile">
         <action
-            android:id="@+id/action_profileFragment_to_addressFragment"
-            app:destination="@id/addressFragment" />
+            android:id="@+id/action_profileFragment_to_allOrdersFragment"
+            app:destination="@id/allOrdersFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_userAccountFragment"
+            app:destination="@id/userAccountFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_billingFragment"
+            app:destination="@id/billingFragment" />
     </fragment>
     <fragment
         android:id="@+id/productDetailsFragment"
@@ -57,8 +63,12 @@
         android:id="@+id/addressFragment"
         android:name="com.example.enactmart.fragments.shopping.AddressFragment"
         android:label="AddressFragment"
-        xmlns:tools="http://schemas.android.com/tools"
-        tools:layout="@layout/fragment_address"/>
+        tools:layout="@layout/fragment_address">
+        <argument
+            android:name="address"
+            app:argType="com.example.enactmart.data.Address"
+            app:nullable="true" />
+    </fragment>
     <fragment
         android:id="@+id/billingFragment"
         android:name="com.example.enactmart.fragments.shopping.BillingFragment"
@@ -73,6 +83,9 @@
         <argument
             android:name="products"
             app:argType="com.example.enactmart.data.CartProduct[]" />
+        <argument
+            android:name="payment"
+            app:argType="boolean" />
     </fragment>
     <fragment
         android:id="@+id/userAccountFragment"
@@ -80,4 +93,22 @@
         android:label="UserAccountFragment"
         xmlns:tools="http://schemas.android.com/tools"
         tools:layout="@layout/fragment_user_account"/>
+    <fragment
+        android:id="@+id/allOrdersFragment"
+        android:name="com.example.enactmart.fragments.settings.AllOrdersFragment"
+        android:label="AllOrdersFragment"
+        tools:layout="@layout/fragment_orders">
+        <action
+            android:id="@+id/action_allOrdersFragment_to_orderDetailFragment"
+            app:destination="@id/orderDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderDetailFragment"
+        android:name="com.example.enactmart.fragments.settings.OrderDetailFragment"
+        android:label="OrderDetailFragment"
+        tools:layout="@layout/fragment_order_detail">
+        <argument
+            android:name="order"
+            app:argType="com.example.enactmart.data.order.Order" />
+    </fragment>
 </navigation>

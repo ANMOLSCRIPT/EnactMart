@@ -11,4 +11,7 @@
     <color name="gray_black">#FF3D4653</color>
     <color name="cream">#FFF8F7F3</color>
 
+    <color name="g_search_and_icons">#FAFBFC</color>
+    <color name="g_gray700">#666666</color>
+
 </resources>

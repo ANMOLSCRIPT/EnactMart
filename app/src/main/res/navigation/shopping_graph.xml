@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shopping_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.enactmart.fragments.shopping.HomeFragment"
+        android:label="HomeFragment"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.enactmart.fragments.shopping.SearchFragment"
+        android:label="SearchFragment"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:layout="@layout/fragment_search"/>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.enactmart.fragments.shopping.CartFragment"
+        android:label="CartFragment"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:layout="@layout/fragment_cart"/>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.enactmart.fragments.shopping.ProfileFragment"
+        android:label="ProfileFragment"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:layout="@layout/fragment_profile"/>
+</navigation>

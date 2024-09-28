@@ -23,19 +23,19 @@
 
     <TextView
         android:id="@+id/tvRightAddressForShopping"
+        style="@style/h4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/h4"
         android:layout_marginTop="@dimen/tvRightAddressMargin"
-        app:layout_constraintTop_toTopOf="@id/guidelineLeftTexture"
-        app:layout_constraintStart_toStartOf="@id/ellipse"
-        app:layout_constraintEnd_toEndOf="@id/ellipse"
-        app:layout_constraintBottom_toBottomOf="@id/ellipse"
+        android:background="@color/white"
+        android:gravity="center"
         android:text="@string/enactmart"
         android:textAlignment="center"
-        android:gravity="center"
         android:textSize="35sp"
-        />
+        app:layout_constraintBottom_toBottomOf="@id/ellipse"
+        app:layout_constraintEnd_toEndOf="@id/ellipse"
+        app:layout_constraintStart_toStartOf="@id/ellipse"
+        app:layout_constraintTop_toTopOf="@id/guidelineLeftTexture" />
 
     <TextView
         android:id="@+id/tvQuality"
@@ -86,14 +86,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.85" />
+        app:layout_constraintGuide_begin="350dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineEllipseTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.19" />
+        app:layout_constraintGuide_percent="0.14" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineEllipseBottom"

@@ -18,30 +18,26 @@ import kotlinx.coroutines.flow.collectLatest
 @AndroidEntryPoint
 class ShoppingActivity : AppCompatActivity() {
 
-    private val binding by lazy {
+    val binding by lazy {
         ActivityShoppingBinding.inflate(layoutInflater)
     }
 
-    private val viewModel by viewModels<CartViewModel>()
+    val viewModel by viewModels<CartViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        // Debug log for NavController
-        Log.d("ShoppingActivity", "Setting up NavController")
         val navController = findNavController(R.id.shoppingHostFragment)
-        Log.d("ShoppingActivity", "NavController retrieved: $navController")
-
-        // Set up BottomNavigationView with NavController
         binding.bottomNavigation.setupWithNavController(navController)
 
         lifecycleScope.launchWhenStarted {
-            viewModel.cartProducts.collectLatest { resource ->
-                when (resource) {
+            viewModel.cartProducts.collectLatest {
+                when (it) {
                     is Resource.Success -> {
-                        val count = resource.data?.size ?: 0
-                        binding.bottomNavigation.getOrCreateBadge(R.id.cartFragment).apply {
+                        val count = it.data?.size ?: 0
+                        val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottomNavigation)
+                        bottomNavigation.getOrCreateBadge(R.id.cartFragment).apply {
                             number = count
                             backgroundColor = resources.getColor(R.color.cream)
                         }
@@ -51,4 +47,5 @@ class ShoppingActivity : AppCompatActivity() {
             }
         }
     }
+
 }

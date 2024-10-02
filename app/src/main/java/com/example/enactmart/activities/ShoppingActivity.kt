@@ -1,11 +1,12 @@
 package com.example.enactmart.activities
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.enactmart.R
 import com.example.enactmart.databinding.ActivityShoppingBinding
@@ -28,8 +29,9 @@ class ShoppingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        val navController = findNavController(R.id.shoppingHostFragment)
-        binding.bottomNavigation.setupWithNavController(navController)
+        val navHostFragment = supportFragmentManager
+            .findFragmentById(R.id.shoppingHostFragment) as NavHostFragment
+        val navController = navHostFragment.navController
 
         lifecycleScope.launchWhenStarted {
             viewModel.cartProducts.collectLatest {
@@ -39,7 +41,7 @@ class ShoppingActivity : AppCompatActivity() {
                         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottomNavigation)
                         bottomNavigation.getOrCreateBadge(R.id.cartFragment).apply {
                             number = count
-                            backgroundColor = resources.getColor(R.color.cream)
+                            backgroundColor = ContextCompat.getColor(this@ShoppingActivity, R.color.cream)
                         }
                     }
                     else -> Unit

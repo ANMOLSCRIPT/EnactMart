@@ -105,10 +105,13 @@ dependencies {
     kapt("com.google.dagger:hilt-compiler:2.46.1") // Updated version
 
     //Navigation Component
-    val nav_version = "2.5.2"
+    val nav_version = "2.7.0"
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 
     //Coroutines with Firebase
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.5.1")
+
+    // Material components (for BottomNavigationView)
+    implementation("com.google.android.material:material:1.9.0")
 }

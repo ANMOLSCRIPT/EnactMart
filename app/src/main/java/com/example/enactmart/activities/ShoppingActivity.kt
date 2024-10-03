@@ -1,15 +1,21 @@
 package com.example.enactmart.activities
 
 import android.os.Bundle
+import android.text.TextUtils.replace
+import android.view.MenuItem
 import androidx.activity.viewModels
+import androidx.annotation.NonNull
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.findNavController
+import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.enactmart.R
 import com.example.enactmart.databinding.ActivityShoppingBinding
+import com.example.enactmart.fragments.shopping.HomeFragment
 import com.example.enactmart.util.Resource
 import com.example.enactmart.viewmodel.CartViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -31,23 +37,21 @@ class ShoppingActivity : AppCompatActivity() {
 
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.shoppingHostFragment) as NavHostFragment
-        val navController = navHostFragment.navController
+        // Get the NavController
+        val navController: NavController = navHostFragment.navController
 
         lifecycleScope.launchWhenStarted {
             viewModel.cartProducts.collectLatest {
                 when (it) {
                     is Resource.Success -> {
                         val count = it.data?.size ?: 0
-                        val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottomNavigation)
-                        bottomNavigation.getOrCreateBadge(R.id.cartFragment).apply {
-                            number = count
-                            backgroundColor = ContextCompat.getColor(this@ShoppingActivity, R.color.cream)
-                        }
+                        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNavigation)
+                        bottomNavigationView.setupWithNavController(navController)
                     }
+
                     else -> Unit
                 }
             }
         }
     }
-
 }

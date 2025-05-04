@@ -1,9 +1,8 @@
-# Enactus Tech Project Round 2
-This project is developed as part of the Round 2 for the recruitment in Enactus Tech Team. 
+# EnactMart
 This is a functional e-commerce mobile app where users can browse the society's products, add items to their cart, and place orders. 
 The app includes features such as user authentication, product categorization and a cart system.
 
-## Developed by: Anmol Garg (2023UIC3667)
+## Developed by: Anmol Garg
 
 ## Key Features:
 1. **User Authentication:**
